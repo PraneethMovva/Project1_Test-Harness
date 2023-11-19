@@ -1,0 +1,12 @@
+This is a test file for nested structure.
+It has multiple lines and words.
+Let's see how the wc utility handles nested structures.
+
+First nested level:
+  Second nested level:
+    Third nested level:
+      Fourth nested level: Here's some text.
+
+Another section with text.
+
+End of the file.
