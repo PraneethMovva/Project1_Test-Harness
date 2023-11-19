@@ -48,12 +48,12 @@ def run_test(program, test_name):
     return "OK"
 
 def main():
-    programs = ["gron", "wc"]  # Add more programs as needed
+    programs = ["gron", "wc", "ungron"]
     total_tests = 0
     failed_tests = 0
 
     for program in programs:
-        for test_name in ["basic", "nested", "empty", "notfound", "special", "err", "mult", "mult2"]:  # Add more test names as needed
+        for test_name in ["basic", "nested", "empty", "notfound", "special", "err", "mult", "mult2"]:
             total_tests += 1
             result = run_test(program, test_name)
             print(result)
