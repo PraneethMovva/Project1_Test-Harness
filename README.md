@@ -12,7 +12,7 @@ Worked for around 22-30 hours.
  I have used git bash in the folder where I have done my project and using the help of python documentation, git documentation and other sources I was able to get some help when in doubt and I have used git bash commands to first check how a particular command actually work and try to implement the same thing in my code and later used the commands using the python and was able to get the similar kind of output. like the "wc foo" gave me the same output when I gave "python wc.py foo" and I have used several test cases to test all the programs and used a lot of trail and error and was finally able to get it.
 
 ## Bugs or Issues I couldn't resolve
-No know bugs the programs are working properly
+No know bugs found. Programs are working fine
 
 ## Difficult Issue and How I solved it 
 I couldn't find what is wrong with the test case for wc as my expected output and actual output are similar but still the test.py file keep showing it as output mismatch then later I have figured that it is taking some extra space and then used the split command and then the problem was resolved.
@@ -21,9 +21,9 @@ While trying to write an extension for the wordcount program I had used an exten
 
 ## Extensions
 I have implemented a total of 4 extensions. Out of which 3 extensions are for WC and 1 extension is for gron. To use the extension first you need to have the total python file(codes) and then you can type the following commands in the bash terminal.
- 
-### 1. python wc.py foo yo    (To get word count of both the files and their total you can also use more files if you want) This is a command line functunality used to get lines, words, and characters and total of 2 or more files
-### 2. python wc.py -lw foo   (It just shows the line and words there in a file) This is a command line functionality used to selectively count lines, words, and characters.
+
+### 1. python wc.py foo yo This is a command line functunality used to get lines, words, and characters and total of 2 or more files
+### 2. python wc.py -lw foo This is a command line functionality used to selectively count lines, words, and characters of a file.
 ### 3. python wc.py -occurrences bye yo (It shows how many occurrences of bye are there in 'yo' file) This is a command line functionality used to find the no:of occurrences of a particular word in one or more files.
 ### 4. python gron.py --obj o order.json     (this helps to use o as the base rather than using json as default) This command line functionality can come in handy when you need other than json to be default.
 

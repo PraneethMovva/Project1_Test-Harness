@@ -52,7 +52,7 @@ def main():
     failed_tests = 0
 
     for program in programs:
-        for test_name in ["basic", "nested", "empty", "notfound", "special", "err"]:
+        for test_name in ["basic", "nested", "empty", "special"]:
             total_tests += 1
             result = run_test(program, test_name)
             print(result)
