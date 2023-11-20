@@ -25,3 +25,5 @@ I have implemented a total of 4 extensions. Out of which 3 extensions are for WC
 ### 3. python wc.py -occurrences bye yo (It shows how many occurrences of bye are there in 'yo' file)
 ### 4. python gron.py --obj o order.json     (this helps to use o as the base rather than using json as default)
 ### Those are the commands to test them out and also try to experiment to use others as well like python wc.py -l foo etc but remember to have an appropriate file for each of the command to work like you need to have some content on each file for wc to work but for gron you need to have a json file where the file should contain a content in the form of dictionary because only then the gron function is actually going to be useful or you would just get json = {}; two curly braces and also the same thing with ungron aswell.
+
+#### P.S: Just keeping few example files like foo, yo, unpack, order.json files in my repo if you want to test them out or you can simply ignore them Thank You.
