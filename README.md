@@ -1,4 +1,4 @@
-# Project1
+# Project1_Test_Harness
 
 ## Praneeth Movva             (pmovva1@stevens.edu)
 
