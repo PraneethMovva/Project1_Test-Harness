@@ -34,4 +34,109 @@ I have implemented a total of 4 extensions. Out of which 3 extensions are for WC
 
 ### Those are the commands to test them out and also try to experiment to use others as well like python wc.py -l foo etc but remember to have an appropriate file for each of the command to work like you need to have some content on each file for wc to work but for gron you need to have a json file where the file should contain a content in the form of dictionary because only then the gron function is actually going to be useful or you would just get json = {}; two curly braces and also the same thing with ungron aswell.
 
+## Few examples of the commands in the terminal
+```
+wc(wrod count):
+
+$ wc yo
+3  5 20 yo
+
+$ python wc.py yo
+3       5       20 yo
+
+$ wc yo foo
+3  5 20 yo
+2  7 33 foo
+5 12 53 total
+
+$ python wc.py yo foo
+3       5       20 yo
+2       7       33 foo
+5       12      53 total
+
+gron:
+
+$ gron order.json
+json = {};
+json.menu = {};
+json.menu.id = "file";
+json.menu.popup = {};
+json.menu.popup.menuitem = [];
+json.menu.popup.menuitem[0] = {};
+json.menu.popup.menuitem[0].onclick = "CreateNewDoc()";
+json.menu.popup.menuitem[0].value = "New";
+json.menu.popup.menuitem[1] = {};
+json.menu.popup.menuitem[1].onclick = "OpenDoc()";
+json.menu.popup.menuitem[1].value = "Open";
+json.menu.popup.menuitem[2] = {};
+json.menu.popup.menuitem[2].onclick = "CloseDoc()";
+json.menu.popup.menuitem[2].value = "Close";
+json.menu.value = "File";
+
+$ python gron.py order.json
+json = {};
+json.menu = {};
+json.menu.id = "file";
+json.menu.value = "File";
+json.menu.popup = {};
+json.menu.popup.menuitem = [];
+json.menu.popup.menuitem[0] = {};
+json.menu.popup.menuitem[0].value = "New";
+json.menu.popup.menuitem[0].onclick = "CreateNewDoc()";
+json.menu.popup.menuitem[1] = {};
+json.menu.popup.menuitem[1].value = "Open";
+json.menu.popup.menuitem[1].onclick = "OpenDoc()";
+json.menu.popup.menuitem[2] = {};
+json.menu.popup.menuitem[2].value = "Close";
+json.menu.popup.menuitem[2].onclick = "CloseDoc()";
+
+$ python gron.py --obj o order.json
+o = {};
+o.menu = {};
+o.menu.id = "file";
+o.menu.value = "File";
+o.menu.popup = {};
+o.menu.popup.menuitem = [];
+o.menu.popup.menuitem[0] = {};
+o.menu.popup.menuitem[0].value = "New";
+o.menu.popup.menuitem[0].onclick = "CreateNewDoc()";
+o.menu.popup.menuitem[1] = {};
+o.menu.popup.menuitem[1].value = "Open";
+o.menu.popup.menuitem[1].onclick = "OpenDoc()";
+o.menu.popup.menuitem[2] = {};
+o.menu.popup.menuitem[2].value = "Close";
+o.menu.popup.menuitem[2].onclick = "CloseDoc()";
+
+ungron:
+
+$ python ungron.py unpack
+{
+  "o": {
+    "menu": {
+      "id": "file",
+      "value": "File",
+      "popup": {
+        "menuitem": [],
+        "menuitem.0": {},
+        "menuitem[0]": {
+          "value": "New",
+          "onclick": "CreateNewDoc()"
+        },
+        "menuitem.1": {},
+        "menuitem[1]": {
+          "value": "Open",
+          "onclick": "OpenDoc()"
+        },
+        "menuitem.2": {},
+        "menuitem[2]": {
+          "value": "Close",
+          "onclick": "CloseDoc()"
+        }
+      }
+    }
+  }
+}
+
+```
+
 #### P.S: Just keeping few example files like foo, yo, unpack, order.json files in my repo if you want to test them out or you can simply ignore them Thank You.
