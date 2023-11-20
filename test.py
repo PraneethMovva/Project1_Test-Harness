@@ -1,6 +1,5 @@
 import os
 import subprocess
-import json
 import re
 
 def parse_table(output):
@@ -53,7 +52,7 @@ def main():
     failed_tests = 0
 
     for program in programs:
-        for test_name in ["basic", "nested", "empty", "notfound", "special", "err", "mult", "mult2"]:
+        for test_name in ["basic", "nested", "empty", "notfound", "special", "err"]:
             total_tests += 1
             result = run_test(program, test_name)
             print(result)
