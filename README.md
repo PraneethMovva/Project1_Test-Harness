@@ -21,12 +21,12 @@ While trying to write an extension for the wordcount program I had used an exten
 
 ## Extensions
 I have implemented a total of 4 extensions. Out of which 3 extensions are for WC and 1 extension is for gron. To use the extension first you need to have the total python file(codes) and then you can type the following commands in the bash terminal.
-
+```
 ### 1. python wc.py foo yo This is a command line functunality used to get lines, words, and characters and total of 2 or more files
 ### 2. python wc.py -lw foo This is a command line functionality used to selectively count lines, words, and characters of a file.
 ### 3. python wc.py -occurrences bye yo (It shows how many occurrences of bye are there in 'yo' file) This is a command line functionality used to find the no:of occurrences of a particular word in one or more files.
 ### 4. python gron.py --obj o order.json     (this helps to use o as the base rather than using json as default) This command line functionality can come in handy when you need other than json to be default.
 
 ### Those are the commands to test them out and also try to experiment to use others as well like python wc.py -l foo etc but remember to have an appropriate file for each of the command to work like you need to have some content on each file for wc to work but for gron you need to have a json file where the file should contain a content in the form of dictionary because only then the gron function is actually going to be useful or you would just get json = {}; two curly braces and also the same thing with ungron aswell.
-
+```
 #### P.S: Just keeping few example files like foo, yo, unpack, order.json files in my repo if you want to test them out or you can simply ignore them Thank You.
