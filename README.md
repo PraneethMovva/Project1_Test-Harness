@@ -34,7 +34,7 @@ I have implemented a total of 4 extensions. Out of which 3 extensions are for WC
 
 ### Those are the commands to test them out and also try to experiment to use others as well like python wc.py -l foo etc but remember to have an appropriate file for each of the command to work like you need to have some content on each file for wc to work but for gron you need to have a json file where the file should contain a content in the form of dictionary because only then the gron function is actually going to be useful or you would just get json = {}; two curly braces and also the same thing with ungron aswell.
 
-## Few examples of the commands in the terminal
+## Few examples of the commands and extensions in the terminal
 ```
 wc(wrod count):
 
